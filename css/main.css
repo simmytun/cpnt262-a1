@@ -1,0 +1,347 @@
+/* BASIC RESET STYLES */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+    margin-top: 30px;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+.hidden-megamenu-local {
+  display: none;
+}
+
+/* FLEXBOX */
+
+/* Main menu Container */
+
+.main-menu-container,
+.main-menu,
+.resources,
+.login-block {
+  display: flex;
+}
+
+.main-menu {
+  flex-grow: 3;
+}
+
+.resources {
+  flex-grow: 2;
+}
+
+.login-block {
+  flex-grow: 1;
+}
+
+/* Highlights section */
+
+.highlights,
+.topics,
+.main-topics-list,
+.social,
+.search,
+.social-wrapper {
+  display: flex;
+}
+
+.logo {
+  flex-basis: 25%;
+}
+
+.topics {
+  flex-basis: 60%;
+}
+
+.topics li {
+  flex-basis: 22.5%;
+}
+
+.topics li:first-of-type {
+  flex-basis: 10%;
+}
+
+.social-wrapper {
+  flex-basis: 15%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* News menu and Mega menu */
+
+.news-menu,
+.news-categories,
+.megamenu-local, 
+.main-news {
+  display: flex;
+}
+
+.news-menu {
+  justify-content: center;
+}
+
+.megamenu-local {
+  align-items: center;
+}
+
+.megamenu-local > li:nth-of-type(odd) {
+  flex-basis: 25%;
+}
+
+.megamenu-local > li:nth-of-type(even) {
+  flex-basis: 50%;
+}
+
+.main-topics-list,
+.main-news {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* OTHER STYLES */
+
+/* Main menu container */
+
+.main-menu-container {
+  background-color: black;
+}
+
+.header-container {
+  background-image: url(http://lorempixel.com/640/300/abstract/6);
+  background-repeat: repeat-x;
+}
+
+/* Links and images  */
+
+a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 0.5em;
+  color: whitesmoke;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Login block links */
+
+.login-block li a {
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+  background-color: #868282;
+  padding: 0 0.8em;
+  margin-top: 0.5em; 
+ }
+ 
+ .login-block li a:hover {
+   background-color: rgb(250, 224, 77);
+   color: black;
+ }
+ 
+ .login-block li:first-of-type {
+   margin-right: 0.5em; 
+ }
+
+ /* Logo Image */
+
+ .logo img {
+  margin: 0 auto;
+}
+
+/* First topic */
+
+.topics li:first-of-type a {
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+/* Other borders and margins */
+
+.social i {
+  font-size: 1.8em;
+}
+
+.search {
+  padding: 1em;
+}
+
+.search-box {
+  background-color: transparent;
+  line-height: 1.5em;
+  color: whitesmoke;
+}
+
+.fa-search {
+  color: whitesmoke;
+  position: relative;
+  right: 2em;
+  top: 0.3em;
+}
+
+.highlights {
+  margin-top: 2em;
+}
+
+.topics li {
+  border: 1px solid whitesmoke;
+  border-top: none;
+}
+
+.topics li:first-of-type {
+  border-left: none;
+}
+
+.social li {
+  border-right: 1px solid whitesmoke;
+  padding: 0 1em;
+}
+
+.social li:last-of-type {
+  border-right: none;
+}
+
+.news-categories {
+  padding-top: 1.5em;
+}
+
+.news-categories > li > a {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+li.local {
+  border-top: 5px solid #9c1f42;
+}
+
+li.national {
+  border-top: 5px solid #e13249;
+}
+
+li.international {
+  border-top: 5px solid #db5c72;
+}
+
+li.business {
+  border-top: 5px solid #96B45C;
+}
+
+li.sports {
+  border-top: 5px solid #006638;
+}
+
+li.opinion {
+  border-top: 5px solid #FF9E37;
+}
+
+li.culture {
+  border-top: 5px solid #6C2869;
+}
+
+li.tendencies {
+  border-top: 5px solid #332265;
+}
+
+li.technology {
+  border-top: 5px solid #195EB5;
+}
+
+li.entertainment {
+  border-top: 5px solid #58C5E0;
+}
+
+li.local > a:hover {
+  background-color: #9c1f42;
+}
+
+li.national > a:hover {
+  background-color: #e13249;
+}
+
+li.international > a:hover {
+  background-color: #db5c72;
+}
+
+li.business > a:hover {
+  background-color: #96B45C;
+}
+
+li.sports > a:hover {
+  background-color: #006638;
+}
+
+li.opinion > a:hover {
+  background-color: #FF9E37;
+}
+
+li.culture > a:hover {
+  background-color: #6C2869;
+}
+
+li.tendencies > a:hover {
+  background-color: #332265;
+}
+
+li.technology > a:hover {
+  background-color: #195EB5;
+}
+
+li.entertainment > a:hover {
+  background-color: #58C5E0;
+}
+
+/* Positioning the mega menu */
+
+.wrapper {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.megamenu-local {
+  position: absolute;
+  background-color: rgb(228, 228, 228);
+  margin: 0 auto;
+  left: 0;
+  padding-bottom: 1em;
+}
+
+.megamenu-local a {
+  color: #838383;
+}
+
+.main-news {
+  width: 95%;
+}
+
+.main-news li {
+  border-bottom: 2px inset #838383;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.main-news li:last-of-type {
+  border-bottom: none;
+}
